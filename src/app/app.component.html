@@ -1,0 +1,28 @@
+<ion-app>
+  <ion-split-pane contentId="main-content">
+    <ion-menu contentId="main-content" type="overlay">
+      <ion-content>
+        <ion-list id="inbox-list">
+          <ion-row>
+            <ion-col>
+              <ion-list-header>Riaz</ion-list-header>
+              <ion-note>lio10riaz@gmail.com</ion-note>
+            </ion-col>
+            <ion-col>
+              <div class="ion-text-end">
+                <img src="assets/img/profile.jpg" class="profile-img"/>
+              </div>
+            </ion-col>
+          </ion-row>
+          <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages">
+            <ion-item [routerLink]="[p.url]">
+              <ion-icon slot="start" [name]="p.icon"></ion-icon>
+              <ion-label>{{ p.title }}</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+    <ion-router-outlet id="main-content"></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>
