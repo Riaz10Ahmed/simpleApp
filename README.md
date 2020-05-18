@@ -1,15 +1,15 @@
 # simpleApp
 A simple app with News API and TODO
 
-#Run the App
+# Run the App
 1.Clone the app
 2.Run "npm install"
 3.Run "ionic serve" or "ionic cordova run browser"
 
-#apk file
+# Apk File
 Apk file is also attached "IonicApp.apk"
 
-#deploy for android
+# Deploy for Android
 1. Set paths
 
 export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64/
